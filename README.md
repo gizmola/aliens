@@ -49,6 +49,7 @@ In some cases, a pygame window will be launched minimized.  Try to click on the 
 
 *Background Image:*
 - "Designed by rawpixel.com / Freepik"
+
 *Sound effects:*
 - 441500__mattix__8bit-spaceship-02.wav
 - url: https://freesound.org/s/441500/
