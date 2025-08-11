@@ -14,7 +14,8 @@ This version has a number of enhancements that you might find interesting.
 
 - A background image was added
 - The original ship and alien bmp images were reworked to have transparent backgrounds
-- A 2nd alien image was created to so the ship could have a simple animation
+- The original images were reworked into png files with alpha channel transparent backgrounds
+- A 2nd alien image was created to so the alien could have a simple animation
 - Sprite animation was created for the alien
 - A google font was loaded rather than depending on the Pygame system font
 - When the ship fires missiles (bullets) there's a sound effect
