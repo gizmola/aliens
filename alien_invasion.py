@@ -179,14 +179,18 @@ class AlienInvasion:
         elif event.key == pygame.K_SPACE:
             if self.game_active: 
                 self._fire_bullet()
+        elif event.key == pygame.K_s:
+            self._screenshot() 
 
     def _check_keyup_events(self, event):
         """Respond to key releases."""
         if event.key == pygame.K_RIGHT:
             self.ship.moving_right = False
         elif event.key == pygame.K_LEFT:
-            self.ship.moving_left = False            
-            
+            self.ship.moving_left = False
+    def _screenshot(self):
+        pygame.image.save(self.screen, "data/screenshot.png")
+
     def _update_screen(self):
         """Update images on the screen, and flip to the new screen."""
         self.screen.fill(self.settings.bg_color)
@@ -237,7 +241,8 @@ class AlienInvasion:
 
             self._update_screen()
             # Run at 60 FPS 
-            self.clock.tick(60)       
+            self.clock.tick(60)
+                    
 
 if __name__ == '__main__':
     # Make a game instance, and run the game.
